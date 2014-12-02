@@ -1,0 +1,3 @@
+class ChristmasTree
+
+end
