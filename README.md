@@ -54,7 +54,7 @@ position in the string after 11 blank spaces. Notice we decrease the blank
 spaces by 1 and increase "*" by 2 until we reach the max height of 12.
 
 To calculate the base we follow a similar format. The total amount of
-blank spaces we be a third of the width + 1 and the total amount of "x" will
+blank spaces will be a third of the width + 1 and the total amount of "x" will
 be a sixth of the width.
 
 ```ruby
