@@ -59,7 +59,7 @@ be a sixth of the width.
 
 ```ruby
 # blank spaces = (24 / 3) + 1 = 9
-# total x = 24 / 6 = 3
+# total x = 24 / 6 = 4
 
 "         xxxx"
 "         xxxx"
