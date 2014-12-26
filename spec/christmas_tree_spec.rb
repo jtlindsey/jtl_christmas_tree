@@ -2,12 +2,14 @@ require './lib/christmas_tree'
 
 describe ChristmasTree do
 
+
   let(:tree){ChristmasTree.new(4)}
 
   context "#initialize" do
     it "contains a height" do
 
       expect(tree.height).to eq 4
+
     end
 
     it "contains a width double the height" do
@@ -16,6 +18,7 @@ describe ChristmasTree do
     end
 
     it "raises an error if height is less than 4" do
+      
       expect { ChristmasTree.new(2) }.to raise_error
     end
   end
@@ -37,6 +40,7 @@ describe ChristmasTree do
   end
 
   context "#draw_tree" do
+
     it "draws a tree with a height of 4" do
       expected = <<-ct
    *
@@ -52,6 +56,7 @@ describe ChristmasTree do
   context "#draw_base" do
     it "draws a tree with a base" do
       expected = <<-ct
+
    x
    x
    x
@@ -64,6 +69,7 @@ describe ChristmasTree do
   context "#draw_tree_with_base" do
     it "draws a Christmas Tree" do
       expected = <<-ct
+
    *
   ***
  *****

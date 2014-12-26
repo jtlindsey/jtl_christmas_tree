@@ -32,6 +32,7 @@ class ChristmasTree
     base = ""
 
     3.times do
+
       base << " " * (width / 2.5) + "x" * (width / 6.5) + "\n"
     end
 
