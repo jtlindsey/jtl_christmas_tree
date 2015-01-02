@@ -53,6 +53,6 @@ name = gets.chomp
 puts "Hello " + name + "!"
 
 puts "How wide do you want your tree?"
-user_tree_size = Integer(gets)
-new_tree = ChristmasTree.new(user_tree_size)
+user_tree_size = gets
+new_tree = ChristmasTree.new(user_tree_size.to_i)
 puts new_tree.draw_tree_with_base + "\n"

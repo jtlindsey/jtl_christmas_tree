@@ -24,18 +24,18 @@ describe ChristmasTree do
   end
 
   context "#drawing_stars" do
-    it "draws two spaces and a star" do
+    it "draws 5 spaces and a star" do
       blank_spaces = 2
       stars = 1
 
-      expect(tree.drawing_stars(blank_spaces, stars)).to eq "  *\n"
+      expect(tree.drawing_stars(blank_spaces, stars)).to eq "     *\n" #off-set adds 3
     end
 
-    it "draws one space and two stars" do
+    it "draws 4 spaces and two stars" do
       blank_spaces = 1
       stars = 2
 
-      expect(tree.drawing_stars(blank_spaces, stars)).to eq " **\n"
+      expect(tree.drawing_stars(blank_spaces, stars)).to eq "    **\n"
     end
   end
 
@@ -43,10 +43,10 @@ describe ChristmasTree do
 
     it "draws a tree with a height of 4" do
       expected = <<-ct
-   *
-  ***
- *****
-*******
+      *
+     ***
+    *****
+   *******
       ct
 
       expect(tree.draw_tree).to eq expected
@@ -56,9 +56,9 @@ describe ChristmasTree do
   context "#draw_base" do
     it "draws a tree with a base" do
       expected = <<-ct
-   x
-   x
-   x
+      x
+      x
+      x
       ct
 
       expect(tree.draw_base).to eq expected
@@ -68,13 +68,13 @@ describe ChristmasTree do
   context "#draw_tree_with_base" do
     it "draws a Christmas Tree" do
       expected = <<-ct
-   *
-  ***
- *****
-*******
-   x
-   x
-   x
+      *
+     ***
+    *****
+   *******
+      x
+      x
+      x
       ct
 
       expect(tree.draw_tree_with_base).to eq expected
