@@ -46,8 +46,3 @@ class ChristmasTree
     tree
   end
 end
-
-# puts "Welcome to the ChristmasTree App!\n How big do you want your tree?" 
-# user_tree_size = Integer(gets.chomp)
-# new_tree = ChristmasTree.new(4)
-# puts new_tree.draw_tree_with_base

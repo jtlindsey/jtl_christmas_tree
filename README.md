@@ -65,3 +65,8 @@ be a sixth of the width.
 "         xxxx"
 "         xxxx"
 ```
+
+Other Notes
+=====
+This app includes additions from the dojo_tree app from original:
+https://github.com/orlandorubydojo/christmas_tree

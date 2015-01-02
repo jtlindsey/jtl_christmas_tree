@@ -56,7 +56,6 @@ describe ChristmasTree do
   context "#draw_base" do
     it "draws a tree with a base" do
       expected = <<-ct
-
    x
    x
    x
@@ -69,7 +68,6 @@ describe ChristmasTree do
   context "#draw_tree_with_base" do
     it "draws a Christmas Tree" do
       expected = <<-ct
-
    *
   ***
  *****
