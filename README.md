@@ -68,5 +68,5 @@ be a sixth of the width.
 
 Other Notes
 =====
-This app includes additions from the dojo_tree app from original:
+This app includes my addons and updates for the dojo_tree app from:
 https://github.com/orlandorubydojo/christmas_tree
