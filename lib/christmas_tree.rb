@@ -46,3 +46,13 @@ class ChristmasTree
     tree
   end
 end
+
+#Command line output
+puts "\nWelcome to the ChristmasTree App!\n Type your name?" 
+name = gets.chomp
+puts "Hello " + name + "!"
+
+puts "How wide do you want your tree?"
+user_tree_size = Integer(gets)
+new_tree = ChristmasTree.new(user_tree_size)
+puts new_tree.draw_tree_with_base + "\n"
