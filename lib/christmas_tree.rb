@@ -9,7 +9,7 @@ class ChristmasTree
   end
 
   def drawing_stars(blank_spaces, stars)
-    " " * blank_spaces + "*" * stars + "\n"
+    "   " + " " * blank_spaces + "*" * stars + "\n"
   end
 
   def draw_tree
@@ -33,7 +33,7 @@ class ChristmasTree
 
     3.times do
 
-      base << " " * (width / 2.5) + "x" * (width / 6.5) + "\n"
+      base << "   " + " " * (width / 2.5) + "x" * (width / 6.5) + "\n"
     end
 
     base
@@ -48,7 +48,7 @@ class ChristmasTree
 end
 
 #Command line output
-puts "\nWelcome to the ChristmasTree App!\n Type your name?" 
+puts "\nWelcome to the ChristmasTree App!\n Type your name." 
 name = gets.chomp
 puts "Hello " + name + "!"
 
